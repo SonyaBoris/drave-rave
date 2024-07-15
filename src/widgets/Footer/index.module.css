@@ -1,0 +1,39 @@
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.desc{
+  font-size: 14px;
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+}
+.desc:hover{
+  color: var(--accent-color);;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+.icon path{
+  transition: fill .2s ease-in-out;
+}
+.icon:hover path{
+  fill: var(--accent-color);
+}

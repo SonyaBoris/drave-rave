@@ -1,0 +1,37 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  background: #fff;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger rect{
+  transition: fill .2s ease-in-out;
+}
+.burger:hover rect{
+  fill: var(--accent-color);
+}
+.icon{
+  background-color: #000;
+  border-radius: 100px;
+  transition: background-color .2s ease-in-out;
+}
+.icon:hover{
+  background-color: var(--accent-color);
+}

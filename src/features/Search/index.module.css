@@ -1,0 +1,17 @@
+.form{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 4px;
+  padding-left: 20px;
+}
+.button{
+  background-color: var(--accent-color);
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}

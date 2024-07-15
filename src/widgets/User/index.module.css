@@ -1,0 +1,35 @@
+.overlay{ 
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(106, 26, 0, 0.3);
+}
+.modal{
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #fff;
+  width: 40%;
+  height: 100vh;
+  border-radius: 20px 0 0 20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.forgive{
+  display: flex;
+  justify-content: space-between;
+}
