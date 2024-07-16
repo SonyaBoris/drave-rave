@@ -2,6 +2,7 @@ import { Roboto } from 'next/font/google'
 import "./globals.css";
 import Header from '@/widgets/Header';
 import Footer from '@/widgets/Footer';
+import Transition from '@/shared/ui/Transition';
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -19,7 +20,11 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <div id='modal-root'></div>
         <Header />
-        {children}
+        <Transition>
+          <main>
+              {children}
+          </main>        
+        </Transition>
         <Footer />
       </body>
     </html>

@@ -8,6 +8,10 @@
   color: #fff;
   border: none;
   border-radius: 100px;
+  transition:  background-color .2s ease-in-out;
+}
+.button:hover{
+  background-color: #000;
 }
 .mini{
   background-color: var(--accent-color);
@@ -16,4 +20,18 @@
   border: none;
   border-radius: 100px;
   cursor: pointer;
+}
+@media (max-width: 920px){
+  .mini{
+    width: 100%;
+  }
+  .mini::after{
+    position: relative;
+    top: -5px;
+    left: 5px;
+    content: "Поиск";
+    font-weight: 700;
+    font-size: 14px;  
+    color: #fff;   
+  }
 }
