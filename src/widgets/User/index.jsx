@@ -2,15 +2,15 @@ import { Modal } from "@/features/Modal";
 import style from "./index.module.css";
 import Input from "@/shared/ui/Input";
 import Button from "@/shared/ui/Button";
-import Transition from "@/shared/ui/Transition";
 import TransitionModal from "@/shared/ui/TransitionModal";
+import TransitionOverlay from "@/shared/ui/TransitionOverlay";
 
 const User = ({ closeModal }) => {
   return (
     <Modal>
-      <Transition>
+      <TransitionOverlay>
         <div className={style.overlay} onClick={closeModal}></div>
-      </Transition>
+      </TransitionOverlay>
       <TransitionModal>
         <div className={style.modal}>
           <button className={style.button} onClick={closeModal}>

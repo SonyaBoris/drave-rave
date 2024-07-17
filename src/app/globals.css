@@ -68,9 +68,6 @@ h2{
 }
 
 @media (max-width: 920px){
-  main{
-    height: 100%;
-  }
   .container{
     padding: 60px 15px;
   }
@@ -83,6 +80,9 @@ h2{
   }
 }
 @media (max-width: 600px){
+  main{
+    min-height: 800px;
+  }
   .content{
     gap: 25px;
   }
